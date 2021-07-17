@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Custome Property</title>
+    <style>
+
+        :root{
+            --side-width: 200px;
+            --dark-border: 2px solid black;
+            --main-color: purple;
+            --border-color: green;
+            --background-color: orange;
+        }
+        h1{
+            color: var(--main-color);
+        }
+        h2{
+            border: 2px solid var(--border-color);
+            color: var(--main-color);
+        }
+        h6{
+            background-color: var(--background-color);
+        }
+        p{
+            color: var(--main-color);
+        }
+        footer{
+            clear:both;
+            border: var(--dark-border);
+            color: var(--main-color);
+        }
+        .side-nav, 
+        .blogs{
+            float: left;
+            height: 500px;
+            
+        }
+        aside{
+            background-color: thistle;
+            width: var(--side-width);
+        }
+        .blogs{
+            background-color: tomato;
+            width: calc(100% - 3*var(--side-width));
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+
+        <h1>I am exploring Customer properties</h1>
+        <p>Welcome to my website</p>
+
+    </header>
+
+    <main>
+       <h2>My awesome content</h2>
+       <h6>My tiny Heading</h6>
+
+       <section>
+
+        <aside class="side-nav">
+            My side Navigation
+        </aside>
+
+        <div class="blogs">
+            <h4>Blogs</h4>
+        </div>
+
+
+       </section>
+
+
+
+    </main>
+
+    <footer>
+        <p><small>copyright</small></p>
+    </footer>
+
+</body>
+
+</html>
